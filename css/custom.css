@@ -1,0 +1,274 @@
+/* add css */
+/* Basic Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 0;
+    border: 3px #342b0f;
+    /* background-image: linear-gradient(rgba(60, 43, 0, 0.5), rgba(245, 218, 10, 0.5)), url(../images/hero.jpg); */
+    /* background-size: cover; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+/* 
+body {
+    background-image: url(../images/bubbles.svg);
+    background-size: cover;
+} */
+ body {
+    background-image: url(../img/moroccan.svg);
+ }
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:beige;
+    padding: 15px 30px;
+    border: 1px inset #715a15 ;
+}
+
+.logo {
+    width: 60px;
+    /* Adjust size as needed */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100%;
+    /* Makes sure it fits within the defined size */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Ensures the image remains circular */
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:saddlebrown;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+}
+.First_box {
+    display: flex;
+    align-items: center;
+    /* Vertically center the text */
+    justify-content: center;
+    /* Horizontally center the text */
+    padding: 20px 50px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #8a630e;
+    border-radius: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 1200px;
+    font-family:'Times New Roman', Times, serif;
+    flex: 1;
+    min-height: 50px;
+    height: auto;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+main {
+    max-width: 80vw;
+    margin: auto;
+    
+}
+.image-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200 px;
+    max-width: 2000px;
+    margin: 30px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Text Section */
+.text {
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 1rem;
+    color: #333;
+    max-width: auto;
+}
+.text2
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+/* Image Section */
+.image {
+    flex: 1;
+    text-align:right;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 5px;
+    max-width: 500px;
+    width: 50%;
+    width: auto;
+}
+
+.image2 {
+    flex: 1;
+    text-align: left;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: auto;
+} 
+.image2:hover {
+    transform: scale(1.05);
+    width: auto;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    width: auto;
+}
+.image img {
+    width: auto;
+    max-width: 500px;
+    border-radius: 10px;
+
+}
+.image2 img {
+    width: auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #555;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Gentium Book Plus", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+nav,
+footer {
+    background-color: rgb(122, 112, 7)
+}
+
+.Title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #555;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Gentium Book Plus", serif;
+    text-align: left;
+    margin-left: auto;
+    flex-direction: column;
+}
+footer {
+    text-align: center;
+    padding: 1em 0 .3em 0;
+        justify-content: space-between;
+        align-items: center;
+        background-color: beige;
+        padding: 15px 30px;
+        border: 1px inset #715a15;
+}
+.pagination {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+}
+.text-box {
+    padding: 2px;
+    margin: 30px;
+    background-color: #7d740a;
+    border-radius: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* Click Box Styling */
+.click-box {
+    display: inline-block;
+    background-color: #715a15;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+    text-align: center;
+
+}
+
+.click-box:hover {
+    background-color: #5a4510;
+    transform: scale(1.05);
+}
+section.odd {
+    grid-template-columns: 4fr 8fr;
+}
+section.even {
+    grid-template-columns: 8fr 4fr;
+}
